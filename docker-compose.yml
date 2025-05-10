@@ -40,7 +40,7 @@ services:
       - webnet
     restart: always
     volumes:
-      # - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - frontend_dist:/var/www/frontend:ro
 
 volumes:
